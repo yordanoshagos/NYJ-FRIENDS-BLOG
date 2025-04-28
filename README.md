@@ -1,1 +1,1 @@
-# NYJ-FRIENDS-BLOG
+# NYJ-book-review

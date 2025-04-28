@@ -1,0 +1,207 @@
+@font-face {
+    font-family: wid;
+    src: url(fonts/wid.ttf);
+}
+body{
+    margin: 0 auto;
+}
+.both-books{
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/beautiful-vintage.webp');    background-size: 100vw 100vh;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+    font-family: wid;
+    font-size: 150%;
+    padding-left: 35%;
+} 
+
+  .book-content {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    position: relative;
+  }
+
+  .book img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: -6em;
+  }
+  .quotes {
+    border: none;
+    width: 10vw;
+    max-width: 400px;
+    font-size: 18px;
+    font-style: italic;
+  }
+  .slide, .slide2 {
+    display: none;
+  }
+
+/* 
+.born-a-crime img{
+    width: 13vw;
+}  */
+
+/* #how-to-win-book{
+  margin-left: 6em;
+  width: 13vw;
+  margin-top: -5em;
+} */
+nav{
+  display: flex;
+  border: 1px solid rgb(61, 82, 75);
+  background-color: rgb(61, 82, 75);
+  border-radius: 55px;
+  height: 7vh;
+  align-items: center;
+  margin-left: -24em;
+   gap: 5%;
+   justify-content: center;
+   margin-top: -8%;
+   width: 25vw;
+   font-family: wid;
+   font-size: 120%; 
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.slide, .slide2 {
+    display: none;
+    font-style: italic;
+    margin-top: -5%;
+    font-size: 18px;
+    position: absolute;
+    width: 25vw;
+    text-align: center;
+  }
+
+
+
+
+  @media only screen and (max-width: 750px) {
+    .both-books {
+      padding-left: 0;
+      align-items: center;
+      text-align: center;
+      font-size: 110%;
+      gap: 1em;
+    }
+    .book-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5em;
+    }
+    .book{
+      margin-top: -2em;
+    }
+    .book img {
+      width: 25vw;
+    }
+    .quotes,
+    .slide,
+    .slide2 {
+      width: 80vw;
+      font-size: 1rem;
+      position: static;
+      margin-top: 0.5em;
+    }
+    nav {
+      width: 90vw;
+      height: auto;
+      font-size: 100%;
+      margin-left: 1.5em;
+      margin-top: -2.5em;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media only screen and (min-width: 751px) and (max-width: 999px) {
+    .both-books {
+      padding-left: 10%;
+      font-size: 130%;
+      gap: 3em;
+    }
+    .book-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 2em;
+    }
+    .book img {
+      width: 20vw;
+    }
+    .quotes,
+    .slide,
+    .slide2 {
+      width: 60vw;
+      font-size: 1.1rem;
+      position: static;
+      margin-top: 1em;
+    }
+    nav {
+      width: 70vw;
+      font-size: 110%;
+      margin-left: 13%;
+      margin-top: -3em;
+      height: auto;
+      padding: 0.2em;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) and (max-width: 1300px) {
+    .both-books {
+      padding-left: 20%;
+      font-size: 140%;
+      gap: 4em;
+    }
+    .book-content {
+      gap: 4%;
+    }
+    .book img {
+      width: 15vw;
+    }
+    .quotes,
+    .slide,
+    .slide2 {
+      width: 35vw;
+      font-size: 1.1rem;
+    }
+    nav {
+      width: 45vw;
+      font-size: 115%;
+      margin-left: 20%;
+      margin-top: -5em;
+    height: 3.5vh;
+    }
+  }
+
+  @media only screen and (min-width: 1301px) {
+    .both-books {
+      padding-left: 35%;
+      font-size: 150%;
+      height: 100vh;
+    }
+    .book img {
+      width: 13vw;
+    }
+    .quotes,
+    .slide,
+    .slide2 {
+      width: 25vw;
+      font-size: 1.1rem;
+    }
+    nav {
+      width: 25vw;
+      margin-left: 40%;
+    }
+  }
+  

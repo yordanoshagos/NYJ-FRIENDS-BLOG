@@ -1,0 +1,407 @@
+@font-face {
+    font-family: wid;
+    src: url(fonts/wid.ttf);
+}
+@font-face {
+    font-family: zeyada;
+    src: url(fonts/Zeyada-Regular.ttf);
+}
+@font-face {
+    font-family: kurale;
+    src: url(fonts/Kurale/Kurale-Regular.ttf);
+}
+body{
+    overflow-x: hidden;
+    margin: 0 auto;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/Serenity\ in\ Grey\ Canvas\ -\ 60\ x\ 60\ cm.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+.cover-book{
+    padding:0.5em 26em;
+}
+.cover-book img{
+    width: 50vw;
+    height: 55vh;
+    border-radius: 15px;
+}
+.blog{
+    color: white;
+    text-align: center;
+    font-family: zeyada;
+    font-size: 250%;
+}
+.all-slider {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    gap: 5%;
+    margin-bottom: 5em;
+
+  }
+  .slide-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    gap: 5%;
+  }
+  .slide-track img {
+    flex-shrink: 0;
+    width: auto;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  nav{
+    display: flex;
+    background-color: rgb(179, 211, 195);
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+    width: 100vw;
+    height: 5vh;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: black;
+        font-family: wid;
+        cursor: pointer;
+    }
+}
+.icon-link{
+    display: block;
+}
+.name-for-book{
+    font-family: kurale;
+    display: flex;
+    background-color: rgb(204, 214, 209);
+    gap: 5em;
+}
+.mama{
+    font-family: kurale;
+    font-size: 260%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.name-for-book img{
+    margin-top: 3em;
+    display: flex;
+    margin-left: 15em;
+    width: 10vw;
+    height: 30vh;
+    transform: rotate(-35deg);
+    border: 5px solid;
+}
+#travor-cover {
+    width: 10vw;
+    height: 30vh;
+    margin-top: -10.5em;
+    margin-left: 5em;
+    border: 5px solid;
+}
+.name-for-book p{
+    width: 56vw;
+    text-align: center;
+    font-size: 150%;
+    margin-top: 3.5em;
+    padding: 3em;
+}
+.abel-quote{
+    display: flex;
+    background-color: rgb(204, 214, 209);
+    gap: 5em;
+    font-family: kurale;
+    padding-left: 5em;
+}
+.insight{
+    width: 50vw;
+    text-align: center;
+    font-size: 150%;
+    margin-top: 5%;
+}
+.insight-image img{
+    display: flex;
+    margin-top: 12em;
+}
+#noah-book{
+    margin-top: -12%;
+    margin-left: 18em;
+    border: 10px solid rgb(255, 255, 255);
+}
+#patricia{
+    border: 10px solid rgb(255, 255, 255);
+}
+footer{
+    font-family: kurale;
+    display: flex;
+    gap: 15em;
+    font-size: 150%;
+    background-color: rgb(82, 87, 87);
+    color: white;
+}
+footer p{
+    width: 35vw;
+    text-align: center;
+}
+#author{
+    display: flex;
+    gap: 3em;
+}
+#author h3{
+    margin-top: 3em;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        background-size: 100%;
+    }
+    .cover-book {
+        padding: 1em;
+    }
+    .cover-book img {
+        width: 100%;
+        height: auto;
+    }
+    .blog {
+        font-size: 180%;
+    }
+    .all-slider {
+        flex-direction: column;
+        gap: 2%;
+    }
+    .slide-track img {
+        height: 150px;
+    }
+    .name-for-book {
+        padding: 1em;
+        flex-direction: column;
+    }
+    .name-for-book img {
+        width: 30vw;
+        height: auto;
+        margin-left: 10%;
+        margin-top: 1em;
+        transform: rotate(0deg);
+    }
+    #travor-cover{
+        margin-left: 50%;
+    }
+    .mama {
+        font-size: 150%;
+    }
+    .name-for-book p {
+        width: 90%;
+        font-size: 120%;
+        margin-top: 1em;
+        padding: 1em;
+    }
+    .abel-quote {
+        padding-left: 2em;
+        flex-direction: column;
+    }
+    .insight {
+        width: 80vw;
+        font-size: 130%;
+    }
+    .insight-image img{
+        margin: 0;
+    }
+    #travor-cover {
+        width: 30vw;
+        height: auto;
+        margin-top: -5em;
+    }
+    #noah-book{
+        margin: 0;
+        margin-top: 2em;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5em;
+        font-size: 110%;
+    }
+    #author {
+        flex-direction: column;
+        align-items: center;
+    }
+    #author img{
+        margin-top: 4em;
+    }
+    #author h3 {
+        margin-top: 1em;
+    }
+    footer p {
+        max-width: 100vw;
+        margin-left: 7em;
+    }
+
+}
+@media only screen and (min-width: 751px) and (max-width: 999px) {
+    body {
+        background-size: 100%;
+    }
+    .cover-book img {
+        width: 50vw;
+        height: auto;
+        margin-left: -12em;
+    }
+    .blog {
+        font-size: 220%;
+    }
+    .all-slider {
+        gap: 3%;
+    }
+    .slide-track img {
+        height: 180px;
+    }
+    .name-for-book {
+        flex-direction: column;
+        padding: 2em;
+        gap: 4%;
+    }
+    .name-for-book img {
+        width: 30vw;
+        height: auto;
+        margin-top: 2em;
+        margin-left: 19em;
+        transform: rotate(-15deg);
+    }
+    #travor-cover{
+        width: 30vw;
+    }
+    .sketch{
+        margin-top: 3em;
+    }
+    .mama {
+        font-size: 230%;
+    }
+    .name-for-book p {
+        width: 75vw;
+        font-size: 130%;
+    }
+    .abel-quote{
+        flex-direction: column;
+    }
+    .insight {
+        width: 75vw;
+        font-size: 130%;
+        height: auto;
+    }
+    .insight-image{
+        margin-top: -10em;
+    }
+    footer {
+        flex-direction: column;
+        gap: 2em;
+        text-align: center;
+        font-size: 130%;
+    }
+    #author {
+        flex-direction: row;
+        justify-content: center;
+    }
+    footer p {
+        max-width: 70vw;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+    body {
+        background-size: 100%;
+        overflow-x: hidden;
+    }
+    .cover-book img {
+        width: 45vw;
+        height: auto;
+        margin-left: -8em;
+    }
+    .blog {
+        font-size: 230%;
+    }
+    .all-slider {
+        gap: 5%;
+    }
+    .slide-track img {
+        height: 200px;
+    }
+    .sketch{
+        margin-top: 3em;
+    }
+    .name-for-book img {
+        width: 15vw;
+        height: auto;
+        margin-top: 3em;
+        transform: rotate(-25deg);
+    }
+    .name-for-book p {
+        font-size: 120%;
+    }
+    .abel-quote{
+        padding: 1em;
+        gap: 3em;
+    }
+    .insight {
+        width: 50vw;
+        font-size: 120%;
+    }
+    #travor-cover {
+        width: 15vw;
+        height: auto;
+        margin-top: -8em;
+    }
+   
+}
+
+@media only screen and (min-width: 1300px) {
+    body {
+        background-size: cover;
+    }
+    .cover-book img {
+        width: 50vw;
+        height: auto;
+    }
+    .blog {
+        font-size: 250%;
+    }
+    .all-slider {
+        gap: 5%;
+    }
+    .slide-track img {
+        height: 200px;
+    }
+    .name-for-book {
+        padding: 3em;
+        gap: 5%;
+    }
+    .name-for-book img {
+        width: 10vw;
+        height: auto;
+    }
+    .name-for-book p {
+        font-size: 150%;
+    }
+    .insight {
+        width: 50vw;
+        font-size: 150%;
+    }
+}
